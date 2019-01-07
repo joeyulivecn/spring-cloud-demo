@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: cfg-client
+  cloud:
+    config:
+      profile: prod # cfg-server{profile}
+      #lable: master #git branch
+      uri: http://localhost:8888/ #config server uri
+server:
+  port: 8801
+
+# add stater-actuator
+# add @RefreshScope to Application class
+# management:
+#   security:
+#     enabled: false
+# POST http://localhost:8801/refresh
