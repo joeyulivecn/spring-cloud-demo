@@ -1,0 +1,14 @@
+server:
+  port: 8030
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    prefer-ip-address: true
+spring:
+  application:
+    name: eureka-user-hystrix
+logging:
+  level:
+    com.netflix.hystrix: debug
